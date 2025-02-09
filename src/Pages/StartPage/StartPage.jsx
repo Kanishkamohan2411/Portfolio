@@ -65,7 +65,7 @@ const StartPage = () => {
       I'm <span ref={typedElement}></span>
     </p>
     <div className="social-links">
-          <a href="https://github.com/" className="github"><i className="bi bi-github"></i></a>
+          <a href="https://github.com/Kanishkamohan2411" className="github"><i className="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/kanishka-m-5655472a0" className="linkedin"><i className="bi bi-linkedin"></i></a>
           <a href="/kanishka_resume.pdf" className="resume" target="_blank" rel="noopener noreferrer">
   <span className="cv-icon">CV</span>
