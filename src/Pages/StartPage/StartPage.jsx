@@ -78,7 +78,7 @@ const StartPage = () => {
 
         
         <section id="about" className="about-section">
-          <h2>About Me!</h2>
+          <h2>ABOUT ME!</h2>
           <div className="about-content">
             <div className="about-photo">
               <img src={Myphoto} alt="Kanishka Mohan" />
@@ -99,7 +99,7 @@ const StartPage = () => {
         </section>
 
         <section id="achievement" className="projects-section">
-  <h2>Achievements</h2>
+  <h2>ACHIEVEMENTS</h2>
   <div className="projects-grid">
   <div className="project-item">
       <div className="project-details">
@@ -152,7 +152,7 @@ const StartPage = () => {
 
 
 <section id="projects" className="achievements-section">
-  <h2>Projects</h2>
+  <h2>PROJECTS</h2>
   <div className="achievements-grid">
     <div className="achievement-item">
   
@@ -199,7 +199,7 @@ const StartPage = () => {
 </section>
 
 <section id="skill-section" className="skill">
-  <h2>Technical Skills</h2>
+  <h2>TECHNICAL SKILLS</h2>
 
 
   <div className="skill-container">
@@ -226,7 +226,7 @@ const StartPage = () => {
 
         
 <section id="contact" className="contact-section">
-  <h2>Contact Me</h2>
+  <h2>CONTACT ME</h2>
   <p>
     
     <a href="mailto:kanishkamnkl@gmail.com" className="contact-link">
