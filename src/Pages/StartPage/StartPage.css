@@ -1,0 +1,757 @@
+
+.d-flex {
+  display: flex;
+  min-height: 100vh;
+  width: 100%; /* Ensure it takes full width */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #292e13;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Content Area */
+.content {
+  margin-left: 250px; /* Leaves space for sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: white;
+  transition: margin-left 0.3s ease-in-out;
+  width: calc(100% - 250px); /* Ensure proper width calculation */
+}
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+/* Add this to StartPage.css */
+.hero-section {
+  /* background-image: url("../../assets/bg pic.jpg"); path to pic10 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Optional, for text visibility */
+}
+
+.hero-container h2 {
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #3D4127;
+}
+
+.hero-container p {
+  font-size: 1.9rem;
+  color: #222;
+}
+
+.hero-container span {
+  color:#9eb124;
+}
+
+.social-links {
+  margin-top: 15px;
+  text-align: center;
+  color:  #3D4127;
+}
+.social-links span{
+  color:  #3D4127;
+}
+.social-links a {
+  font-size: 28px;
+  color:  #3D4127;
+  text-decoration: none;
+  margin: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color:#afb682;
+}
+.social-links span :hover{
+  color:  #afb682;
+}
+
+
+.about-section {
+  padding: 40px;
+  background-color:#f7f9e7;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3D4127
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centers the content horizontally */
+  text-align: center; /* Ensures text within both sections is centered */
+}
+
+.about-photo img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.about-details {
+  flex: 1;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content inside the details section */
+  justify-content: center; /* Centers the content vertically */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.personal-details div {
+  flex: 1;
+}
+.projects-section{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 30px;
+}
+.projects-grid {
+ 
+  display: grid; /* Use grid for a uniform layout */
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Auto-adjust columns */
+  gap: 60px; /* Space between cards */
+  padding: 70px; /* Add padding around the grid */
+  justify-content: center; /* Center the grid within the container */
+}
+.projects-section h2{
+  font-size: 44px;
+  
+  text-align:center;
+  color: #3D4127;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.project-details{
+  /* margin-bottom: 30px; */
+  margin-top: 30px;
+  color: #383d1a;
+}
+.card {
+  width: 100%; /* Let the grid determine the width */
+  height: 250px; /* Fixed height for consistency */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card img {
+  width: 100%; /* Image takes full width of the card */
+  height: 100%; /* Image takes full height of the card */
+  object-fit: cover; /* Ensures the image scales proportionally */
+  border-radius: 5px; /* Match the card's border radius */
+}
+
+
+.card h5 {
+  margin:  0;
+  font-size: 1.8rem; 
+  
+}
+.project-item, .achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-details, .achievement-details {
+  text-align: center;
+  /* font-weight: bold; */
+}
+.project-details h5{
+  /* font-weight: bolder; */
+  margin-bottom: 10px;
+  font-size:30px;
+}
+
+/* Section Styling */
+.achievements-section {
+  padding: 20px;
+  background-color:#f7f9e7;
+}
+.achievements-section h2{
+  text-align:center;
+  color:#3D4127;
+
+}
+/* Grid Layout */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* Single-column layout */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Card */
+.achievement-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Reduced card width */
+  margin: 0 auto; /* Center the card */
+}
+
+/* Image Styling */
+.achievement-img {
+  width: 100%; /* Full width inside the card */
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px; /* Space between image and title */
+  border-radius: 5px;
+}
+
+/* Title Styling */
+.achievement-details h5 {
+  font-size: 1.25rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Paragraph Styling */
+.achievement-details p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+/*  */
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  gap: 16px; /* Adjust the gap between items */
+  justify-items: center; /* Centers items horizontally */
+  color:#3D4127;
+}
+.skill-container{
+  margin-top: 30px;
+  color:#636B2F;
+}
+.skill-img {
+  width: 40px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+  object-fit: contain; /* Maintains aspect ratio */
+}
+.skill h2 {
+  margin-top: 40px;
+  margin-bottom: 52px;
+  text-align: center; 
+  color:#3D4127;/* Adjust the space between the heading and the icons */
+}
+
+
+.contact-section {
+  padding: 20px;
+  background-color: #f7f9e7;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color:#3D4127;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #636B2F;
+}
+
+.contact-section p strong {
+  font-weight: bold;
+}
+
+.contact-link {
+  color:#636B2F;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration:none;
+  color:  #aabf21;
+}
+@media (max-width:1000px){
+
+
+  /* Content Area */
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 60vh; /* Reduce height */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-container h2 {
+    font-size: 2rem;
+  }
+
+  .hero-container p {
+    font-size: 1.2rem;
+  }
+
+  /* About Section */
+  .about-content {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 60%;
+    /* padding: 10px; */
+  }
+  .about-details {
+    flex: 1;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content inside the details section */
+    justify-content: center; /* Centers the content vertically */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .achievement-card {
+    max-width: 75%;
+  }
+
+  /* Skills Section */
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr); /* Reduce columns */
+    gap: 10px;
+  }
+
+  .skill-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  
+
+  /* Content Area */
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 60vh; /* Reduce height */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-container h2 {
+    font-size: 3rem;
+  }
+
+  .hero-container p {
+    font-size: 1.5rem;
+  }
+.about-section{
+  padding: 10px;
+}
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the content horizontally */
+    text-align: center; /* Ensures text within both sections is centered */
+  }
+
+  .about-photo img {
+    max-width: 60%;
+    /* padding: 10px; */
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .achievement-card {
+    max-width: 75%;
+  }
+
+  /* Skills Section */
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr); /* Reduce columns */
+    gap: 10px;
+  }
+
+  .skill-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 10px;
+  }
+}
+@media (min-width:600px) and  (max-width: 720px) {
+  
+
+  /* Content Area */
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 60vh; /* Reduce height */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-container h2 {
+    font-size: 2rem;
+  }
+
+  .hero-container p {
+    font-size: 1.6rem;
+  }
+
+ .about-section{
+  padding: 10px;
+ }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-photo img {
+    max-width: 60%;
+    /* padding: 10px; */
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .achievement-card {
+    max-width: 75%;
+  }
+
+  /* Skills Section */
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr); /* Reduce columns */
+    gap: 10px;
+  }
+
+  .skill-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 10px;
+  }
+}
+@media(max-width:500px){
+  /* Content Area */
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-container p {
+    font-size: 1.3rem;
+  }
+
+  .about-section{
+    padding: 10px;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-photo img {
+    max-width: 90%;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0px;
+  }
+
+  .card {
+    max-width: 100%; /* Increased card width */
+    height: auto;
+  }
+
+  .project-details h5 {
+    
+    margin-top: 20px; 
+    font-size: 1.5rem;
+    
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-card {
+    max-width: 95%;
+  }
+
+  /* Skills Section */
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .skill-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  /* Content Area */
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 50vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-container p {
+    font-size: 1.5rem;
+  }
+
+  .about-section{
+    padding: 10px;
+  }
+  .about-content {
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-photo img {
+    max-width: 90%;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0px;
+  }
+
+  .card {
+    max-width: 100%; /* Increased card width */
+    height: auto;
+  }
+
+  .project-details h5 {
+    
+    margin-top: 20px; 
+    font-size: 1.5rem;
+    
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-card {
+    max-width: 95%;
+  }
+
+  /* Skills Section */
+  .skill-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .skill-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-section{
+    padding: 10px;
+  }
+  .projects-section{
+    padding: 10px;
+  }
+  /* Project Details */
+  .project-details h5 {
+    font-size: 1.5rem;
+   
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+    gap: 15px;
+    padding: 10px;
+  }
+  .project-details h5 {
+    
+    margin-top: 10px; 
+    
+  }
+  .card {
+    max-width: 100%; /* Set card width to 100% for large width */
+  }
+
+  .project-item {
+    max-width: 100%; /* Ensure the project item takes up full width */
+  }
+}
+@media (max-width: 375px) {
+  /* Project Details */
+  .project-details h5 {
+    font-size: 1.2rem;
+    /* margin-top: 10px;  Make title smaller */
+  }
+  .about-section{
+    padding: 10px;
+  }
+}
